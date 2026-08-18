@@ -1,8 +1,11 @@
-# aws-ec2-web-server
-Deploying an Apache web server on Amazon EC2 using User Data and Security Groups.
+# AWS EC2 Web Server
+
+Deploying an Apache web server on Amazon EC2 using Security Groups, with a User Data script created for automation.
 This project demonstrates how I deployed a simple Apache web server on an Amazon EC2 instance using Amazon Linux.
 I launched and configured an EC2 instance, set up a Security Group, installed Apache, and hosted a simple HTML webpage.
+
 ## Architecture
+
 ![AWS EC2 Web Server Architecture](architecture/architecture.png)
 
 ## AWS Services & Tools Used
@@ -14,7 +17,7 @@ I launched and configured an EC2 instance, set up a Security Group, installed Ap
 - EC2 Instance Connect
 - Git
 - GitHub
-- 
+  
  ## What I Did
 
 1. Launched an Amazon Linux EC2 instance.
@@ -27,7 +30,7 @@ I launched and configured an EC2 instance, set up a Security Group, installed Ap
 8. Accessed the website through the EC2 public IPv4 address.
 9. Documented the setup with screenshots and an architecture diagram.
 
-## Apache Installation
+ ## Apache Installation
 
 I used the following commands to install and start Apache:
 
@@ -35,6 +38,8 @@ I used the following commands to install and start Apache:
 sudo dnf update -y
 sudo dnf install -y httpd
 sudo systemctl start httpd
+ ```
+
 ## Screenshots
 
 ### EC2 Instance
